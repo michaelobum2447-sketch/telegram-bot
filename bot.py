@@ -10,7 +10,16 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "Join my group for daily games:\n"
         "https://t.me/+UEq55Zwr4gZjNDk0\n\n"
         "VIP Subscription: ₦5,000\n"
-        "Type VIP to subscribe."
+        "if "vip" in text:
+    await update.message.reply_text(
+        "🔥 VIP SUBSCRIPTION – ₦5,000 🔥\n\n"
+        "To activate VIP access, make payment to:\n\n"
+        "Bank: Opay\n"
+        "Account Name: Michael Uchendu\n"
+        "Account Number: 7030009791\n\n"
+        "After payment, send your proof of payment here.\n"
+        "You will be activated immediately after confirmation. ✅"
+    )
     )
 
 async def reply_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
