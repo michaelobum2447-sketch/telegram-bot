@@ -10,7 +10,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "Join my group for daily games:\n"
         "https://t.me/+UEq55Zwr4gZjNDk0\n\n"
         "VIP Subscription: ₦5,000\n"
-        "if "vip" in text:
+        if "vip" in text:
     await update.message.reply_text(
         "🔥 VIP SUBSCRIPTION – ₦5,000 🔥\n\n"
         "To activate VIP access, make payment to:\n\n"
@@ -20,7 +20,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "After payment, send your proof of payment here.\n"
         "You will be activated immediately after confirmation. ✅"
     )
-    )
+    
+    
 
 async def reply_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text.lower()
